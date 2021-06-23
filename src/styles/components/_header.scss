@@ -1,0 +1,35 @@
+/* .navbar > .container,
+.navbar > .container-fluid,
+.navbar > .container-lg,
+.navbar > .container-md,
+.navbar > .container-sm,
+.navbar > .container-xl,
+.navbar > .container-xxl {
+  justify-content: flex-end;
+}
+ */
+
+ .navbar > .container,
+.navbar > .container-fluid {
+   justify-content: flex-end;
+}
+
+
+ /* .navbar .navbar-collapse .collapse .show {
+    background-color: chocolate;
+    align-self: center;
+    justify-content: center;
+ } */
+
+ .navbar-collapse {
+    justify-content: center;
+}
+
+.nav-item {
+   text-align: center;
+}
+
+.navbar-light .navbar-toggler {
+   color: rgb(232 201 201 / 55%);
+   border-color: rgba(0,0,0,.1);
+}

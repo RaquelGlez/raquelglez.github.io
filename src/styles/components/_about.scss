@@ -1,0 +1,25 @@
+
+.about__container {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+
+.about__image-container {
+    width: 45%;
+
+    .img {
+       width: 100%;
+    }
+} 
+
+.about__title {
+    font-family: $font-family-title;
+}
+
+.about__description {
+  //  font-family: $font-family-base;
+  font-size: 1rem;
+  text-align: center;
+}

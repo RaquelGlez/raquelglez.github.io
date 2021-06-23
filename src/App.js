@@ -1,18 +1,22 @@
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import {Work} from './components/Work'
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { Work } from "./components/Work";
+import { About } from "./components/About";
+import { Header } from "./components/Header";
 
 function App() {
   return (
     <div className="">
-      <h1>Portafolio</h1>
+      {/* <h1>Portafolio</h1> */}
       <Router>
+        <Header />
         <Switch>
-          {/* <Route exact path="/">
-            <h2>Sobre mí</h2>
-          </Route> */}
+          <Route exact path="/" >
+            {/* <About /> */}
+            <div className="bg-info vh-100">vfhvbgfdbf</div>
+          </Route>
           <Route exact path="/work">
             <h2>Proyectos</h2>
-            <Work/>
+            <Work />
           </Route>
           <Route exact path="/skills">
             <h2>Habilidades</h2>

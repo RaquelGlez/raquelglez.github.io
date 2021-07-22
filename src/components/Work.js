@@ -105,10 +105,9 @@ export const Work = () => {
   };
 
   return (
-    <div className="proyect__container">
+    <div className="proyect__container container-fluid vh-100">
       <div className="proyect__card-container">
         {renderCard()}
-
       </div>
     </div>
   );

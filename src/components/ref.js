@@ -588,3 +588,67 @@ export const Work = () => {
   );
 };
  */
+
+
+
+
+
+
+
+
+
+
+//styles with home 
+
+/*
+
+
+.home__line1 {
+  //border: 1px black solid;
+  // background-color: rgb(94, 90, 90);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 500px;
+  height: 50px;
+  background-color: #e5e5e5;
+  text-shadow: 2px 2px 3px rgb(147, 32, 32);
+  color: rgb(94, 90, 90);
+  border-radius: 20px;
+  /* box-shadow: -10px -10px 15px #fff,
+                10px, 10px 15px #c1c1c1,
+                inset 0px 0px 0px #fff,
+                inset 0px 0px 0px #c1c1c1; */
+ // box-shadow: -10px -10px 15px rgb(155, 105, 105), 10px, 10px 15px #6549c9,
+  //  0px 0px 0px rgb(191, 226, 62) inset, 0px 0px 0px #c1c1c1 inset;
+ // box-shadow: -10px -10px 15px rgb(36, 202, 72);
+/*  box-shadow: -10px -10px 15px #fff, 
+            10px 10px 15px #c1c1c1, 
+            0px 0px 0px #fff inset, 
+            0px 0px 0px #c1c1c1 inset;
+
+  cursor: pointer;
+  transition: all 300ms ease;
+} */
+
+//.home__line1:hover {
+ /*   box-shadow: 0px 0px 0px #fff,
+                0px 0px 0px #c1c1c1,
+                inset -10px -10px 15px #fff
+                inset 10px 10px 15px #c1c1c1; */
+/*     box-shadow: 0px 0px 0px rgb(119, 49, 49), 
+                0px 0px 0px #1b6974, 
+                0px -20px 15px rgb(44, 99, 182) inset, 
+                0px 20px 15px #9dc50c inset;
+    color: 2px 2px 3px rgb(147, 32,32);
+    text-shadow: 2px 2px 3px rgb(147, 32,32);
+} */
+
+
+
+////////////////////////////////
+
+
+
+
+

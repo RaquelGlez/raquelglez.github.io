@@ -4,6 +4,9 @@
    flex-direction: column;
    justify-content: center;
    align-items: center;
+   //background-color: $bg-gral;
+   //background: linear-gradient(0deg, #3f87a6, #ebf8e1, #f69d3c);;
+   background: linear-gradient(0deg, #3b1f0b, #ebf8e1, #337fb0);;
 }
 
 .about__image-container {
@@ -16,10 +19,25 @@
 
 .about__title {
     font-family: $font-family-title;
+    text-align: center;
 }
 
 .about__description {
   //  font-family: $font-family-base;
   font-size: 1rem;
   text-align: center;
+}
+
+.about__content-text {
+
+}
+
+
+
+
+
+.animation__container {
+  //border-bottom: 1px solid red;
+  //background: linear-gradient(0.25turn, #3f87a6, #ebf8e1, #f69d3c);
+  //background: linear-gradient(0deg, #3f87a6, #ebf8e1, #f69d3c);
 }

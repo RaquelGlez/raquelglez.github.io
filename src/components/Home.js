@@ -58,7 +58,7 @@ export const Home = () => {
         <div className="home__supply">
           <div className="home__supply-content">
             <div className="home__name-line">
-               <div className="home__supply-line">
+               <div className="home__supply-line home__supply-name">
                 Raquel González
                 </div> 
               </div>
@@ -67,15 +67,13 @@ export const Home = () => {
               </div>
             
             <div className="home__position-line">
-              <div className="home__supply-line">
+              <div className="home__supply-line home__supply-position">
                 Frontend developer
               </div>
             </div> 
             <div className="home__position-secondary">
               <SecondaryOutletLine position="top" />
             </div>
-            
-
           </div>
         </div>
 

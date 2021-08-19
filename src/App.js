@@ -10,18 +10,18 @@ function App() {
     <div className="app__container vh-100">
       {/* <h1>Portafolio</h1> */}
       <Router>
-        {/* <Header /> */}
+        {/*  <Header /> */}
         <Switch>
           <Route exact path="/" >
             {/* <About /> */}
             {/* efeewwefwerwe */}
             <Home/>
           </Route>
-          <Route exact path="/work">
+          <Route exact path="/proyects">
             {/* <h2>Proyectos</h2> */}
             <Work />
           </Route>
-          <Route exact path="/skills">
+          <Route exact path="/about">
             <h2>Habilidades</h2>
           </Route>
           <Route exact path="/contact">

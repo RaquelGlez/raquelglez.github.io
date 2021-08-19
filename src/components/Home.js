@@ -9,7 +9,6 @@ export const Home = () => {
   };
 
   const SecondaryOutletLine = ({ position }) => {
-    /*  return <div className="home__secondary-line"></div>; */
     return (
       <div
         className={`home__secondary-line home__secondary-line-${position}`}
@@ -48,6 +47,18 @@ export const Home = () => {
         <div className="home__agitator-item">{getSymbol(9474)}</div>
         <div >{getSymbol(8734)}</div>
       </div>
+    )
+  }
+
+  const Section = ({title, page, section}) => {
+    return (
+      <div className={`home__${section}-link`}>
+      <div className="home__tank home__tank-size-link">
+        <Link className="nav-link active" aria-current="page" to={`${page}`}>
+          { title }
+        </Link>
+      </div>
+    </div>
     )
   }
 
@@ -101,11 +112,6 @@ export const Home = () => {
                 </div>
                 <div className="home__mix-tank">
                   <div className="home__tank-mix home__tank-size-mix">
-                    {/* <img
-                      src={agitator}
-                      className="home__tank-agitator"
-                      alt={agitator}
-                    /> */}
                     <Agitator />
                   </div>
                 </div>
@@ -137,27 +143,9 @@ export const Home = () => {
             <Valve />
           </div>
         </div>
-        <div className="home__about-link">
-          <div className="home__tank home__tank-size-link">
-            <Link className="nav-link active" aria-current="page" to="/">
-              Sobre mí
-            </Link>
-          </div>
-        </div>
-        <div className="home__proyects-link">
-          <div className="home__tank home__tank-size-link">
-            <Link className="nav-link active" aria-current="page" to="/">
-              Proyectos
-            </Link>
-          </div>
-        </div>
-        <div className="home__contact-link">
-          <div className="home__tank home__tank-size-link">
-            <Link className="nav-link active" aria-current="page" to="/">
-              Contacto
-            </Link>
-          </div>
-        </div>
+        <Section title="Sobre mí" page="/about" section="about" />
+        <Section title="Proyectos" page="/proyects" section="proyects"/>
+        <Section title="Contacto" page="/contact" section="contact"/>
       </div>
     </div>
   );

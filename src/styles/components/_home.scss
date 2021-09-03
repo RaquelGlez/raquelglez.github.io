@@ -271,8 +271,10 @@
   background-color: #686868;
   color: rgb(94, 90, 90);
   height: 1.5em;
-  box-shadow: 0px 0px 0px #eee, 0px 0px 0px #7c7c7c, inset 0px 15px 12px #eee,
-    inset 0px 15px 25px #7c7c7c;
+  box-shadow: 0px 0px 0px #eee, 
+              0px 0px 0px #7c7c7c, 
+              inset 0px 15px 12px #eee,
+              inset 0px 15px 25px #7c7c7c;
 }
 
 .home__main-line-valve {
@@ -300,7 +302,7 @@
   justify-content: center;
   align-items: center;
   //background-color: #686868;
-  color: $green;
+ // color: $green;
   font-weight: 500;
 
   box-shadow: 0px 0px 0px #eee, 0px 0px 0px #7c7c7c, inset 0px 25px 25px #eee,
@@ -310,7 +312,7 @@
   transition: all 300ms ease;
 }
 
-.home__valve-connection {
+.home__valve-size {
   height: 2.5em;
   width: 12%;
 }
@@ -388,6 +390,27 @@
 
 .home__agitator-item {
   margin-bottom: -0.8em;
+}
+
+.bi-gear {
+  color: rgba(12, 10, 10, 0.7);
+  box-shadow: 0 0 15px rgba(248, 248, 248, 0.7);
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+.home-gear {
+  animation-name: rotate-gear-home;
+}
+
+@keyframes rotate-gear-home {
+  from {
+    transform: rotateZ(0deg);
+  }
+  to {
+    transform: rotateZ(360deg);
+  }
 }
 
 @media (max-width: 767.9px) {

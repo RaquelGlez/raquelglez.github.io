@@ -1,8 +1,9 @@
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import { Work } from "./components/Work";
-import { About } from "./components/About";
-import { Header } from "./components/Header";
 import { Home } from "./components/Home";
+import { About } from "./components/About";
+import { Work } from "./components/Work";
+import { Contact } from './components/Contact'
+/* import { Header } from "./components/Header"; */
 
 
 function App() {
@@ -22,10 +23,12 @@ function App() {
             <Work />
           </Route>
           <Route exact path="/about">
-            <h2>Habilidades</h2>
+            {/* <h2>Sobre mí</h2> */}
+            <About />
           </Route>
           <Route exact path="/contact">
-            <h2>Contacto</h2>
+           {/*  <h2>Contacto</h2> */}
+            <Contact />
           </Route>
         </Switch>
       </Router>

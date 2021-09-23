@@ -2,9 +2,7 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import { Home } from "./components/Home";
 import { About } from "./components/About";
 import { Work } from "./components/Work";
-import { Contact } from './components/Contact'
-/* import { Header } from "./components/Header"; */
-
+import { Contact } from "./components/Contact";
 
 function App() {
   return (
@@ -13,10 +11,10 @@ function App() {
       <Router>
         {/*  <Header /> */}
         <Switch>
-          <Route exact path="/" >
+          <Route exact path="/">
             {/* <About /> */}
             {/* efeewwefwerwe */}
-            <Home/>
+            <Home />
           </Route>
           <Route exact path="/proyects">
             {/* <h2>Proyectos</h2> */}
@@ -27,7 +25,7 @@ function App() {
             <About />
           </Route>
           <Route exact path="/contact">
-           {/*  <h2>Contacto</h2> */}
+            {/*  <h2>Contacto</h2> */}
             <Contact />
           </Route>
         </Switch>

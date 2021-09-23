@@ -16,7 +16,6 @@ export const Home = () => {
       ></div>
     );
   };
-  
 
   const getSymbol = (code) => {
     let char = String.fromCharCode(code);
@@ -46,7 +45,7 @@ export const Home = () => {
 
   return (
     <div className="home__container container">
-      <h6>RQL Process</h6>
+      <h1 className="home__title">Raquel González, the process</h1>
       <div className="home__grid-container">
         <div className="home__supply">
           <div className="home__supply-content">
@@ -77,7 +76,7 @@ export const Home = () => {
             </div>
             <div className="home__output-line-horizontal home__output-about-second">
               <MainOutletLine complement="valve" />
-              <Valve comp="home"/>
+              <Valve comp="home" />
             </div>
           </div>
         </div>
@@ -115,14 +114,14 @@ export const Home = () => {
             </div>
             <div className="home__output-line-horizontal home__output-contact-second">
               <MainOutletLine complement="valve" />
-              <Valve comp="home"/>
+              <Valve comp="home" />
             </div>
           </div>
         </div>
         <div className="home__output-proyects">
           <div className="home__output-line-horizontal">
             <MainOutletLine complement="valve" />
-            <Valve comp="home"/>
+            <Valve comp="home" />
           </div>
         </div>
         <Section title="Sobre mí" page="/about" section="about" />

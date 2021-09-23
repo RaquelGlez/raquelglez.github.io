@@ -2,6 +2,7 @@
   display: flex;
   margin-right: 2em;
   height: 90%;
+  color: $blue-l;
 }
 
 .proyect__tank-container {
@@ -10,9 +11,8 @@
   position: relative;
   overflow: hidden;
   border-radius: 3em/1.2em;
-  //background-color: rgba(122, 10, 10, 0.856);
-  box-shadow: inset 5px -8px 12px rgba(255, 255, 255, 0.5),
-    inset 10px 15px 25px rgba(66, 65, 65, 0.7);
+  box-shadow: inset 5px -8px 12px rgba($gray1-shadow, 0.5),
+    inset 10px 15px 25px rgba($gray2-shadow, 0.7);
 
   &::before {
     border-radius: 3em/1.2em;
@@ -22,8 +22,8 @@
     left: 0;
     top: 0;
     width: 100%;
-    box-shadow: inset 0px 15px 12px rgba(66, 65, 65, 0.7),
-      inset 0px 15px 25px rgba(253, 253, 253, 0.7);
+    box-shadow: inset 0px 15px 12px rgba($gray2-shadow, 0.7),
+      inset 0px 15px 25px rgba($gray1-shadow, 0.7);
   }
 }
 
@@ -44,38 +44,49 @@
   width: 90%;
   display: flex;
 
-  .card {
-  
+  .card-text_tech {
+    display: flex;
+
+    .badge {
+      color: $blue-l;
+      padding: 0.5em 0.65em;
+      line-height: normal;
+    }
+  }
+
+  .card-text_tech-list {
+    font-size: 0.7em;
+    margin: 0;
+    padding: 0.5em 0.65em;
+    text-align: left;
   }
 
   .accordion-button {
-    color: #484e4a;
+    color: $blue-l;
     box-shadow: none;
   }
 
   .accordion-button:not(.collapsed) {
-    color: white;
-    background-color: rgba(0, 0, 0, 0.82);
+    color: $bg-white;
+    background-color: rgba($bg_black, 0.82);
   }
 }
 
 .proyect__card {
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba($bg_black, 0.3);
   margin-left: 0.5em;
   margin-right: 0.5em;
   text-align: center;
 }
 
 .accordion-body {
-  color: black;
-
   a {
-    color: rgb(30, 210, 99);
+    color: $mint;
     text-decoration: none;
   }
 
   a:hover {
-    color: red;
+    color: $mustard;
     text-decoration: underline;
   }
 }
@@ -83,20 +94,18 @@
 .icon-page {
   margin-right: 0.2em;
 }
+
 .proyect__card-image {
-  //width: 300px;
+  width: 95%;
+  align-self: center;
 }
 
 .accordion-item {
-  //background-color: #fff;
-  // background-color: rgb(138, 19, 19);
   border: none;
 }
 
 .proyect-gear {
   animation-name: rotate-gear-proyect;
-  /* color: rgba(12, 10, 10, 0.7);
-  box-shadow: 0 0 15px rgba(248, 248, 248, 0.7); */
 }
 
 @keyframes rotate-gear-proyect {
@@ -109,9 +118,6 @@
 }
 
 @media (max-width: 769px) {
-  .proyect__tank-container {
-  }
-
   .proyect__card-container {
     display: flex;
     flex-wrap: wrap;
@@ -125,7 +131,7 @@
   }
 
   .proyect__card-container::-webkit-scrollbar-thumb {
-    background-color: #eee;
+    background-color: $bg-white;
     border-radius: 0.2em;
   }
 
@@ -134,13 +140,16 @@
   }
 
   .proyect__card-image {
-    // width: 30em;
+    width: 100%;
   }
 
   .accordion-body {
     a {
       display: block;
-      color: rgb(210, 162, 30);
+    }
+
+    .card-link + .card-link {
+      margin-left: 0rem;
     }
   }
 }

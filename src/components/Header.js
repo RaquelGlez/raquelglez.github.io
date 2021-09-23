@@ -4,12 +4,11 @@ import { Link } from "react-router-dom";
 export const Header = () => {
   return (
     <div>
-      
       <nav className="navbar navbar-expand-lg navbar-light">
         <div className="container-fluid">
           {/* <a className="navbar-brand" href="#">
             Navbar
-          </a> */} 
+          </a> */}
           <button
             className="navbar-toggler"
             type="button"
@@ -24,19 +23,25 @@ export const Header = () => {
           <div className="collapse navbar-collapse" id="navbarNav">
             <ul className="navbar-nav">
               <li className="nav-item">
-                <Link className="nav-link active" aria-current="page" to="/">Sobre mí</Link>
+                <Link className="nav-link active" aria-current="page" to="/">
+                  Sobre mí
+                </Link>
                 {/* <a className="nav-link active" aria-current="page" href="#"> 
                   Sobre mí
                 </a>*/}
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to="/work" >Proyectos</Link>
+                <Link className="nav-link" to="/work">
+                  Proyectos
+                </Link>
                 {/* <a className="nav-link" href="#">
                   Proyectos
                 </a> */}
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to="/contact" >Contacto</Link>
+                <Link className="nav-link" to="/contact">
+                  Contacto
+                </Link>
                 {/* <a className="nav-link" href="#">
                   Contacto
                 </a> */}
@@ -45,11 +50,6 @@ export const Header = () => {
           </div>
         </div>
       </nav>
-
-
-
-
-
     </div>
   );
 };

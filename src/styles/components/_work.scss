@@ -35,6 +35,27 @@
   align-items: center;
 }
 
+.proyect-arrow-back {
+  display: none;
+}
+
+.proyect__valve-size {
+  height: 4em;
+  width: 1.5em;
+  cursor: pointer;
+  transition: all 300ms ease;
+
+  &:hover {
+    .proyect-arrow-back {
+      display: inherit;
+    }
+
+    .proyect-gear {
+      display: none;
+    }
+  }
+}
+
 .proyect__tank-name {
   grid-row: 2/3;
 }

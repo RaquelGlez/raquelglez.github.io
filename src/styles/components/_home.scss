@@ -268,9 +268,6 @@
 
   box-shadow: 0px 0px 0px #eee, 0px 0px 0px #7c7c7c, inset 0px 25px 25px #eee,
     inset 20px 10px 10px #7c7c7c;
-
-  cursor: pointer;
-  transition: all 300ms ease;
 }
 
 .home__valve-size {
@@ -349,6 +346,10 @@
 
 .home-gear {
   animation-name: rotate-gear-home;
+}
+
+.home-arrow-back {
+  display: none;
 }
 
 @keyframes rotate-gear-home {

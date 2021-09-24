@@ -45,7 +45,7 @@ export const about = {
   descriptionSkills:
     "Me he desempeñado como frontend, empleando algunas tecnologías como:",
   skills:
-    "HTML, CSS, JS, REACT, REACT NATIVE, SASS, NODE, FIREBASE, GIT, GITHUB, SWIFT",
+    "HTML, CSS, JS, REACT, REACT NATIVE, SASS, NODE, FIREBASE, GIT, GITHUB, GITFLOW, SWIFT",
 };
 
 export const icons = {
